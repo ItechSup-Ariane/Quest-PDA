@@ -1,0 +1,3 @@
+itech_sup_questionnaire_homepage:
+    path:     /Questionnaire
+    defaults: { _controller: ItechSupQuestionnaireBundle:Default:index }
