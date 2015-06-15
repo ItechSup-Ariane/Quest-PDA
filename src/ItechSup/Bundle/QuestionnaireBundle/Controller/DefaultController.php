@@ -18,7 +18,14 @@ class DefaultController extends Controller
 //        $em->persist($appreciation);
 //        $em->flush(); 
         
-        $creationFormulaire = '<a href="http://www.w3schools.com">Créer un nouveau formulaire</a>';
+//        $creationFormulaire = '<a href="http://www.w3schools.com">Créer un nouveau formulaire</a>';
+//        $creationFormulaire = '<input type="text" />';
+        
+        $form = $this->createFormBuilder()
+                ->add('nom','text')
+                ->add('Mot_de_passe','text')
+                ->add('Valider','submit')
+                ->getForm();
         
 //        $form = $this->createFormBuilder()
 //        ->add('Outils_et_support_pedagogiques','choice',
@@ -49,7 +56,11 @@ class DefaultController extends Controller
 //        
 //        echo("");
         
-        //return $this->render('ItechSupQuestionnaireBundle:Default:index.html.twig',array('form'=> $form -> createView()));
-        return $this->render('ItechSupQuestionnaireBundle:Default:index.html.twig', array('creationForm' => $creationFormulaire));
+        	
+        $nom = $form->get('nom')->getData();
+//        var_dump($nom);
+        
+        return $this->render('ItechSupQuestionnaireBundle:Default:index.html.twig',array('form'=> $form -> createView()));
+//        return $this->render('ItechSupQuestionnaireBundle:Default:index.html.twig', array('creationForm' => $creationFormulaire));
     }
 }
