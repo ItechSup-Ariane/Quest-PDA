@@ -1845,7 +1845,7 @@
         </argument>
         <argument type="service">
           <service class="Symfony\Component\Security\Core\Authentication\Provider\AnonymousAuthenticationProvider" public="false">
-            <argument>556d7f119123e</argument>
+            <argument>557ec1237d393</argument>
           </service>
         </argument>
         <argument type="service">
@@ -2120,7 +2120,7 @@
         <argument type="service">
           <service class="Symfony\Component\Security\Http\Firewall\AnonymousAuthenticationListener" public="false">
             <argument type="service" id="security.context"/>
-            <argument>556d7f119123e</argument>
+            <argument>557ec1237d393</argument>
             <argument type="service" id="monolog.logger.security" on-invalid="null"/>
             <argument type="service" id="security.authentication.manager"/>
           </service>
@@ -2694,11 +2694,13 @@
               <service class="Doctrine\Common\Persistence\Mapping\Driver\MappingDriverChain" public="false">
                 <call method="addDriver">
                   <argument type="service">
-                    <service class="Doctrine\ORM\Mapping\Driver\AnnotationDriver" public="false">
-                      <argument type="service" id="annotation_reader"/>
+                    <service class="Doctrine\ORM\Mapping\Driver\SimplifiedYamlDriver" public="false">
                       <argument type="collection">
-                        <argument>C:\xampp\htdocs\Questionnaire\src\ItechSup\Bundle\QuestionnaireBundle\Entity</argument>
+                        <argument key="C:\xampp\htdocs\Questionnaire\src\ItechSup\Bundle\QuestionnaireBundle\Resources\config\doctrine">ItechSup\Bundle\QuestionnaireBundle\Entity</argument>
                       </argument>
+                      <call method="setGlobalBasename">
+                        <argument>mapping</argument>
+                      </call>
                     </service>
                   </argument>
                   <argument>ItechSup\Bundle\QuestionnaireBundle\Entity</argument>
