@@ -35,6 +35,7 @@ class FormulaireController extends Controller
             'entities' => $entities,
         );
     }
+    
     /**
      * Creates a new Formulaire entity.
      *
@@ -169,6 +170,7 @@ class FormulaireController extends Controller
 
         return $form;
     }
+    
     /**
      * Edits an existing Formulaire entity.
      *
@@ -202,6 +204,7 @@ class FormulaireController extends Controller
             'delete_form' => $deleteForm->createView(),
         );
     }
+    
     /**
      * Deletes a Formulaire entity.
      *

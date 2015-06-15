@@ -3,7 +3,6 @@
 namespace ItechSup\Bundle\QuestionnaireBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
-//use ItechSup\Bundle\QuestionnaireBundle\Entity\Appreciation;
 
 class DefaultController extends Controller
 {

@@ -35,6 +35,7 @@ class NotationController extends Controller
             'entities' => $entities,
         );
     }
+    
     /**
      * Creates a new Notation entity.
      *
@@ -169,6 +170,7 @@ class NotationController extends Controller
 
         return $form;
     }
+    
     /**
      * Edits an existing Notation entity.
      *
@@ -202,6 +204,7 @@ class NotationController extends Controller
             'delete_form' => $deleteForm->createView(),
         );
     }
+    
     /**
      * Deletes a Notation entity.
      *

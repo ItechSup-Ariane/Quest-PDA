@@ -35,6 +35,7 @@ class CommentaireController extends Controller
             'entities' => $entities,
         );
     }
+    
     /**
      * Creates a new Commentaire entity.
      *
@@ -169,6 +170,7 @@ class CommentaireController extends Controller
 
         return $form;
     }
+    
     /**
      * Edits an existing Commentaire entity.
      *
@@ -202,6 +204,7 @@ class CommentaireController extends Controller
             'delete_form' => $deleteForm->createView(),
         );
     }
+    
     /**
      * Deletes a Commentaire entity.
      *

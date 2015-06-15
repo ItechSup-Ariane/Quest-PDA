@@ -35,6 +35,7 @@ class QuestionController extends Controller
             'entities' => $entities,
         );
     }
+    
     /**
      * Creates a new Question entity.
      *
@@ -169,6 +170,7 @@ class QuestionController extends Controller
 
         return $form;
     }
+    
     /**
      * Edits an existing Question entity.
      *
@@ -202,6 +204,7 @@ class QuestionController extends Controller
             'delete_form' => $deleteForm->createView(),
         );
     }
+    
     /**
      * Deletes a Question entity.
      *

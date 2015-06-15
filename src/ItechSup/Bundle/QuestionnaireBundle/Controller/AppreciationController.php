@@ -35,6 +35,7 @@ class AppreciationController extends Controller
             'entities' => $entities,
         );
     }
+    
     /**
      * Creates a new Appreciation entity.
      *
@@ -202,6 +203,7 @@ class AppreciationController extends Controller
             'delete_form' => $deleteForm->createView(),
         );
     }
+    
     /**
      * Deletes a Appreciation entity.
      *
