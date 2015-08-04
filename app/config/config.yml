@@ -6,6 +6,7 @@ fos_user:
     db_driver: orm 
     # other valid values are 'mongodb', 'couchdb' and 'propel'
     firewall_name: main
+    use_listener: false
     user_class: ItechSup\Bundle\QuestionnaireBundle\Entity\Utilisateur
 
 framework:

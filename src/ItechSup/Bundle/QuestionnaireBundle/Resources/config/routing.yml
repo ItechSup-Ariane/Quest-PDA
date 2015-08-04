@@ -2,6 +2,10 @@ itech_sup_questionnaire_homepage:
     path:     /Questionnaire
     defaults: { _controller: ItechSupQuestionnaireBundle:Default:index }
 
+itech_sup_questionnaire_menu:
+    path:     /menu
+    defaults: { _controller: ItechSupQuestionnaireBundle:Menu:index }
+
 itech_sup_questionnaire_appreciation_index:
     path:     /Appreciation
     defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:index }
