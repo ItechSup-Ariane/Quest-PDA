@@ -8,7 +8,7 @@ use Doctrine\ORM\Mapping as ORM;
  * Formulaire
  *
  * @ORM\Table()
- * @ORM\Entity(repositoryClass="ItechSup\Bundle\QuestionnaireBundle\Entity\FormulaireRepository")
+ * @ORM\Entity()
  */
 class Formulaire
 {

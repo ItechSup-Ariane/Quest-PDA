@@ -13,7 +13,7 @@ use ItechSup\Bundle\QuestionnaireBundle\Form\AppreciationType;
 /**
  * Appreciation controller.
  *
- * @Route("/questionnaire_formualaire")
+ * @Route("/questionnaire_formulaire")
  */
 class AppreciationController extends Controller
 {
@@ -21,7 +21,7 @@ class AppreciationController extends Controller
     /**
      * Lists all Appreciation entities.
      *
-     * @Route("/", name="questionnaire_formualaire")
+     * @Route("/", name="questionnaire_formulaire")
      * @Method("GET")
      * @Template()
      */
@@ -39,7 +39,7 @@ class AppreciationController extends Controller
     /**
      * Creates a new Appreciation entity.
      *
-     * @Route("/", name="questionnaire_formualaire_create")
+     * @Route("/", name="questionnaire_formulaire_create")
      * @Method("POST")
      * @Template("ItechSupQuestionnaireBundle:Appreciation:new.html.twig")
      */
@@ -54,7 +54,7 @@ class AppreciationController extends Controller
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('questionnaire_formualaire_show', array('id' => $entity->getId())));
+            return $this->redirect($this->generateUrl('questionnaire_appreciation_show', array('id' => $entity->getId())));
         }
 
         return array(
@@ -73,7 +73,7 @@ class AppreciationController extends Controller
     private function createCreateForm(Appreciation $entity)
     {
         $form = $this->createForm(new AppreciationType(), $entity, array(
-            'action' => $this->generateUrl('questionnaire_formualaire_create'),
+            'action' => $this->generateUrl('questionnaire_appreciation_create'),
             'method' => 'POST',
         ));
 
@@ -85,7 +85,7 @@ class AppreciationController extends Controller
     /**
      * Displays a form to create a new Appreciation entity.
      *
-     * @Route("/new", name="questionnaire_formualaire_new")
+     * @Route("/new", name="questionnaire_appreciation_new")
      * @Method("GET")
      * @Template()
      */
@@ -103,7 +103,7 @@ class AppreciationController extends Controller
     /**
      * Finds and displays a Appreciation entity.
      *
-     * @Route("/{id}", name="questionnaire_formualaire_show")
+     * @Route("/{id}", name="questionnaire_appreciation_show")
      * @Method("GET")
      * @Template()
      */
@@ -128,7 +128,7 @@ class AppreciationController extends Controller
     /**
      * Displays a form to edit an existing Appreciation entity.
      *
-     * @Route("/{id}/edit", name="questionnaire_formualaire_edit")
+     * @Route("/{id}/edit", name="questionnaire_appreciation_edit")
      * @Method("GET")
      * @Template()
      */
@@ -162,7 +162,7 @@ class AppreciationController extends Controller
     private function createEditForm(Appreciation $entity)
     {
         $form = $this->createForm(new AppreciationType(), $entity, array(
-            'action' => $this->generateUrl('questionnaire_formualaire_update', array('id' => $entity->getId())),
+            'action' => $this->generateUrl('questionnaire_appreciation_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
@@ -173,7 +173,7 @@ class AppreciationController extends Controller
     /**
      * Edits an existing Appreciation entity.
      *
-     * @Route("/{id}", name="questionnaire_formualaire_update")
+     * @Route("/{id}", name="questionnaire_appreciation_update")
      * @Method("PUT")
      * @Template("ItechSupQuestionnaireBundle:Appreciation:edit.html.twig")
      */
@@ -194,7 +194,7 @@ class AppreciationController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('questionnaire_formualaire_edit', array('id' => $id)));
+            return $this->redirect($this->generateUrl('questionnaire_appreciation_index', array('id' => $id)));
         }
 
         return array(
@@ -207,7 +207,7 @@ class AppreciationController extends Controller
     /**
      * Deletes a Appreciation entity.
      *
-     * @Route("/{id}", name="questionnaire_formualaire_delete")
+     * @Route("/{id}", name="questionnaire_appreciation_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, $id)
@@ -227,7 +227,7 @@ class AppreciationController extends Controller
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('questionnaire_formualaire'));
+        return $this->redirect($this->generateUrl('questionnaire_appreciation_index'));
     }
 
     /**
@@ -240,7 +240,7 @@ class AppreciationController extends Controller
     private function createDeleteForm($id)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('questionnaire_formualaire_delete', array('id' => $id)))
+            ->setAction($this->generateUrl('questionnaire_appreciation_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()

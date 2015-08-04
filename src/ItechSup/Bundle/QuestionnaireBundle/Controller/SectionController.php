@@ -38,7 +38,7 @@ class SectionController extends Controller
     /**
      * Creates a new Section entity.
      *
-     * @Route("/", name="_create")
+     * @Route("/", name="questionnaire_section_create")
      * @Method("POST")
      * @Template("ItechSupQuestionnaireBundle:Section:new.html.twig")
      */
@@ -53,7 +53,7 @@ class SectionController extends Controller
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('_show', array('id' => $entity->getId())));
+            return $this->redirect($this->generateUrl('questionnaire_section_show', array('id' => $entity->getId())));
         }
 
         return array(
@@ -72,7 +72,7 @@ class SectionController extends Controller
     private function createCreateForm(Section $entity)
     {
         $form = $this->createForm(new SectionType(), $entity, array(
-            'action' => $this->generateUrl('_create'),
+            'action' => $this->generateUrl('questionnaire_section_create'),
             'method' => 'POST',
         ));
 
@@ -84,7 +84,7 @@ class SectionController extends Controller
     /**
      * Displays a form to create a new Section entity.
      *
-     * @Route("/new", name="_new")
+     * @Route("/new", name="questionnaire_section_new")
      * @Method("GET")
      * @Template()
      */
@@ -102,7 +102,7 @@ class SectionController extends Controller
     /**
      * Finds and displays a Section entity.
      *
-     * @Route("/{id}", name="_show")
+     * @Route("/{id}", name="questionnaire_section_show")
      * @Method("GET")
      * @Template()
      */
@@ -127,7 +127,7 @@ class SectionController extends Controller
     /**
      * Displays a form to edit an existing Section entity.
      *
-     * @Route("/{id}/edit", name="_edit")
+     * @Route("/{id}/edit", name="questionnaire_section_edit")
      * @Method("GET")
      * @Template()
      */
@@ -161,7 +161,7 @@ class SectionController extends Controller
     private function createEditForm(Section $entity)
     {
         $form = $this->createForm(new SectionType(), $entity, array(
-            'action' => $this->generateUrl('_update', array('id' => $entity->getId())),
+            'action' => $this->generateUrl('questionnaire_section_update', array('id' => $entity->getId())),
             'method' => 'PUT',
         ));
 
@@ -172,7 +172,7 @@ class SectionController extends Controller
     /**
      * Edits an existing Section entity.
      *
-     * @Route("/{id}", name="_update")
+     * @Route("/{id}", name="questionnaire_section_update")
      * @Method("PUT")
      * @Template("ItechSupQuestionnaireBundle:Section:edit.html.twig")
      */
@@ -193,7 +193,7 @@ class SectionController extends Controller
         if ($editForm->isValid()) {
             $em->flush();
 
-            return $this->redirect($this->generateUrl('_edit', array('id' => $id)));
+            return $this->redirect($this->generateUrl('questionnaire_section_edit', array('id' => $id)));
         }
 
         return array(
@@ -205,7 +205,7 @@ class SectionController extends Controller
     /**
      * Deletes a Section entity.
      *
-     * @Route("/{id}", name="_delete")
+     * @Route("/{id}", name="questionnaire_section_delete")
      * @Method("DELETE")
      */
     public function deleteAction(Request $request, $id)
@@ -238,7 +238,7 @@ class SectionController extends Controller
     private function createDeleteForm($id)
     {
         return $this->createFormBuilder()
-            ->setAction($this->generateUrl('_delete', array('id' => $id)))
+            ->setAction($this->generateUrl('questionnaire_section_delete', array('id' => $id)))
             ->setMethod('DELETE')
             ->add('submit', 'submit', array('label' => 'Delete'))
             ->getForm()

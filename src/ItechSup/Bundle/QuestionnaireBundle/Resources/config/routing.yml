@@ -1,3 +1,195 @@
 itech_sup_questionnaire_homepage:
     path:     /Questionnaire
     defaults: { _controller: ItechSupQuestionnaireBundle:Default:index }
+
+itech_sup_questionnaire_appreciation_index:
+    path:     /Appreciation
+    defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:index }
+
+questionnaire_appreciation_index:
+    path:     /Appreciation/index
+    defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:index }
+
+questionnaire_appreciation_show:
+    path:     /Appreciation/show/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:show }
+    
+questionnaire_appreciation_edit:
+    path:     /Appreciation/edit/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:edit }
+
+questionnaire_appreciation_new:
+    path:     /Appreciation/new
+    defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:new }
+
+questionnaire_appreciation_create:
+    path:     /Appreciation/create
+    defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:create }
+
+questionnaire_appreciation_delete:
+    path:     /Appreciation/delete/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:delete }
+
+questionnaire_appreciation_update:
+    path:     /Appreciation/update/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:update }
+
+itech_sup_questionnaire_commentaire_index:
+    path:     /Commentaire
+    defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:index }
+
+questionnaire_commentaire_index:
+    path:     /Commentaire/index
+    defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:index }
+
+questionnaire_commentaire_show:
+    path:     /Commentaire/show/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:show }
+    
+questionnaire_commentaire_edit:
+    path:     /Commentaire/edit/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:edit }
+
+questionnaire_commentaire_new:
+    path:     /Commentaire/new
+    defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:new }
+
+questionnaire_commentaire_create:
+    path:     /Commentaire/create
+    defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:create }
+
+questionnaire_commentaire_delete:
+    path:     /Commentaire/delete/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:delete }
+
+questionnaire_commentaire_update:
+    path:     /Commentaire/update/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:update }
+
+itech_sup_questionnaire_formulaire_index:
+    path:     /Formulaire
+    defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:index }
+
+questionnaire_formulaire_index:
+    path:     /Formulaire/index
+    defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:index }
+
+questionnaire_formulaire_show:
+    path:     /Formulaire/show/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:show }
+    
+questionnaire_formulaire_edit:
+    path:     /Formulaire/edit/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:edit }
+
+questionnaire_formulaire_new:
+    path:     /Formulaire/new
+    defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:new }
+
+questionnaire_formulaire_create:
+    path:     /Formulaire/create
+    defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:create }
+ 
+questionnaire_formulaire_delete:
+    path:     /Formulaire/delete
+    defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:delete }
+ 
+questionnaire_formulaire_update:
+    path:     /Formulaire/update
+    defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:update }
+    
+itech_sup_questionnaire_notation_index:
+    path:     /Notation
+    defaults: { _controller: ItechSupQuestionnaireBundle:Notation:index }
+
+questionnaire_notation_index:
+    path:     /Notation/index
+    defaults: { _controller: ItechSupQuestionnaireBundle:Notation:index }
+
+questionnaire_notation_show:
+    path:     /Notation/show/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Notation:show }
+    
+questionnaire_notation_edit:
+    path:     /Notation/edit/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Notation:edit }
+
+questionnaire_notation_create:
+    path:     /Notation/create
+    defaults: { _controller: ItechSupQuestionnaireBundle:Notation:create }
+
+questionnaire_notation_update:
+    path:     /Notation/update/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Notation:update }
+
+questionnaire_notation_new:
+    path:     /Notation/new
+    defaults: { _controller: ItechSupQuestionnaireBundle:Notation:new }
+
+questionnaire_notation_delete:
+    path:     /Notation/delete
+    defaults: { _controller: ItechSupQuestionnaireBundle:Notation:delete }
+
+itech_sup_questionnaire_question_index:
+    path:     /Question
+    defaults: { _controller: ItechSupQuestionnaireBundle:Question:index }
+
+questionnaire_question_index:
+    path:     /Question/index
+    defaults: { _controller: ItechSupQuestionnaireBundle:Question:index }
+
+questionnaire_question_show:
+    path:     /Question/show/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Question:show }
+    
+questionnaire_question_edit:
+    path:     /Question/edit/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Question:edit }
+
+questionnaire_question_new:
+    path:     /Question/new
+    defaults: { _controller: ItechSupQuestionnaireBundle:Question:new }
+
+questionnaire_question_create:
+    path:     /Question/create
+    defaults: { _controller: ItechSupQuestionnaireBundle:Question:create }
+
+questionnaire_question_delete:
+    path:     /Question/delete
+    defaults: { _controller: ItechSupQuestionnaireBundle:Question:delete }
+
+questionnaire_question_update:
+    path:     /Question/update/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Question:update }
+
+itech_sup_questionnaire_section_index:
+    path:     /Section
+    defaults: { _controller: ItechSupQuestionnaireBundle:Section:index }
+
+questionnaire_section_index:
+    path:     /Section/index
+    defaults: { _controller: ItechSupQuestionnaireBundle:Section:index }
+
+questionnaire_section_show:
+    path:     /Section/show/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Section:show }
+    
+questionnaire_section_edit:
+    path:     /Section/edit/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Section:edit }
+
+questionnaire_section_new:
+    path:     /Section/new
+    defaults: { _controller: ItechSupQuestionnaireBundle:Section:new }
+
+questionnaire_section_create:
+    path:     /Section/create
+    defaults: { _controller: ItechSupQuestionnaireBundle:Section:create }
+
+questionnaire_section_delete:
+    path:     /Section/delete
+    defaults: { _controller: ItechSupQuestionnaireBundle:Section:delete }
+
+questionnaire_section_update:
+    path:     /Section/update/{id}
+    defaults: { _controller: ItechSupQuestionnaireBundle:Section:update }

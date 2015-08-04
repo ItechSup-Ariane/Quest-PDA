@@ -228,7 +228,7 @@ class CommentaireController extends Controller
             $em->flush();
         }
 
-        return $this->redirect($this->generateUrl('questionnaire_commentaire'));
+        return $this->redirect($this->generateUrl('questionnaire_commentaire_index'));
     }
 
     /**
