@@ -61,6 +61,6 @@ class DefaultController extends Controller
 //        
 //        return $this->render('ItechSupQuestionnaireBundle:Default:index.html.twig',array('form'=> $form -> createView()));
 ////        return $this->render('ItechSupQuestionnaireBundle:Default:index.html.twig', array('creationForm' => $creationFormulaire));
-         return $this->render('ItechSupQuestionnaireBundle:Menu:index.html.twig');
+        return $this->render('ItechSupQuestionnaireBundle:Default:index.html.twig');
     }
 }

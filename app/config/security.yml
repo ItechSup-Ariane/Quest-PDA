@@ -26,7 +26,7 @@ security:
 
                 # Les options de redirection en cas de succès de connexion (lire plus bas)
                 always_use_default_target_path: false
-                default_target_path:            /menu
+                default_target_path:            /
                 target_path_parameter:          _target_path
                 use_referer:                    false
 
