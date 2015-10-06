@@ -3,11 +3,11 @@ itech_sup_questionnaire_homepage:
     defaults: { _controller: ItechSupQuestionnaireBundle:Default:index }
 
 itech_sup_questionnaire_appreciation_index:
-    path:     /Appreciation
+    path:     /admin/Appreciation
     defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:index }
 
 questionnaire_appreciation_index:
-    path:     /Appreciation/index
+    path:     /admin/Appreciation/index
     defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:index }
 
 questionnaire_appreciation_show:
@@ -35,11 +35,11 @@ questionnaire_appreciation_update:
     defaults: { _controller: ItechSupQuestionnaireBundle:Appreciation:update }
 
 itech_sup_questionnaire_commentaire_index:
-    path:     /Commentaire
+    path:     /admin/Commentaire
     defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:index }
 
 questionnaire_commentaire_index:
-    path:     /Commentaire/index
+    path:     /admin/Commentaire/index
     defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:index }
 
 questionnaire_commentaire_show:
@@ -67,11 +67,11 @@ questionnaire_commentaire_update:
     defaults: { _controller: ItechSupQuestionnaireBundle:Commentaire:update }
 
 itech_sup_questionnaire_formulaire_index:
-    path:     /Formulaire
+    path:     admin/Formulaire
     defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:index }
 
 questionnaire_formulaire_index:
-    path:     /Formulaire/index
+    path:     /admin/Formulaire/index
     defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:index }
 
 questionnaire_formulaire_show:
@@ -99,11 +99,11 @@ questionnaire_formulaire_update:
     defaults: { _controller: ItechSupQuestionnaireBundle:Formulaire:update }
     
 itech_sup_questionnaire_notation_index:
-    path:     /Notation
+    path:     /admin/Notation
     defaults: { _controller: ItechSupQuestionnaireBundle:Notation:index }
 
 questionnaire_notation_index:
-    path:     /Notation/index
+    path:     /admin/Notation/index
     defaults: { _controller: ItechSupQuestionnaireBundle:Notation:index }
 
 questionnaire_notation_show:
@@ -131,11 +131,11 @@ questionnaire_notation_delete:
     defaults: { _controller: ItechSupQuestionnaireBundle:Notation:delete }
 
 itech_sup_questionnaire_question_index:
-    path:     /Question
+    path:     /admin/Question
     defaults: { _controller: ItechSupQuestionnaireBundle:Question:index }
 
 questionnaire_question_index:
-    path:     /Question/index
+    path:     /admin/Question/index
     defaults: { _controller: ItechSupQuestionnaireBundle:Question:index }
 
 questionnaire_question_show:
@@ -163,11 +163,11 @@ questionnaire_question_update:
     defaults: { _controller: ItechSupQuestionnaireBundle:Question:update }
 
 itech_sup_questionnaire_section_index:
-    path:     /Section
+    path:     admin/Section
     defaults: { _controller: ItechSupQuestionnaireBundle:Section:index }
 
 questionnaire_section_index:
-    path:     /Section/index
+    path:     /admin/Section/index
     defaults: { _controller: ItechSupQuestionnaireBundle:Section:index }
 
 questionnaire_section_show:
